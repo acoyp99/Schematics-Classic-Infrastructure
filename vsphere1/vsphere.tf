@@ -9,6 +9,9 @@ provider "vsphere" {
 
 }
 
+data "vsphere_datacenter" "dc" {
+  name = "dal13"
+}
 
 data "ibm_compute_bare_metal" "bare_metal" {
   hostname    = "${var.bm_name}"
