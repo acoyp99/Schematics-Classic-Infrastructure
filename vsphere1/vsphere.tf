@@ -10,3 +10,7 @@ provider "vsphere" {
 }
 
 
+data "ibm_compute_bare_metal" "bare_metal" {
+  hostname    = "${var.bm_name}"
+  domain      = "${var.bm_domain}"
+}
