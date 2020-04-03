@@ -7,13 +7,14 @@ provider "vsphere" {
   # if you have a self-signed cert
   allow_unverified_ssl = "${var.allow_unverified_ssl}"
 
-}
+  }
 
-data "vsphere_datacenter" "dc" {
-  name = "dal13"
-}
-
-data "ibm_compute_bare_metal" "bare_metal" {
+data "ibm_compute_bare_metal" "bm" {
   hostname    = "${var.bm_name}"
   domain      = "${var.bm_domain}"
-}
+  }
+
+data "vsphere_datacenter" "dc" {
+  name = "${data.ibm_compute_bare_metal.bm.datacenter}"
+  
+  }
