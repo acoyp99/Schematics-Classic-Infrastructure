@@ -9,7 +9,4 @@ provider "vsphere" {
 
 }
 
-data "vsphere_compute_cluster" "cluster" {
-  name          = "vmware-esx-baremetal"
-  
-}
+
