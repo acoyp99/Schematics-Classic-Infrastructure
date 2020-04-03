@@ -17,3 +17,12 @@ variable "allow_unverified_ssl" {
   description = "Allows terraform vsphere provider to communicate with vsphere servers with self signed certificates"
   default     = "true"
 }
+
+variable "bm_name" {
+  desciption = "Name of the BareMetal server"
+  }
+
+variable "bm_domain" {
+  desciption = "Domain of the BareMetal server"
+  
+  }
