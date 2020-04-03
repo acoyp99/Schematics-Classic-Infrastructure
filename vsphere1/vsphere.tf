@@ -8,3 +8,8 @@ provider "vsphere" {
   allow_unverified_ssl = "${var.allow_unverified_ssl}"
 
 }
+
+data "vsphere_compute_cluster" "cluster" {
+  name          = "vmware-esx-baremetal"
+  
+}
