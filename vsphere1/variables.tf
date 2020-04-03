@@ -19,7 +19,7 @@ variable "allow_unverified_ssl" {
 }
 
 variable "bm_name" {
-   description = "Name of the BareMetal server"
+  description = "Name of the BareMetal server"
   }
 
 variable "bm_domain" {
