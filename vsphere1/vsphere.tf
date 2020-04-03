@@ -15,6 +15,6 @@ data "ibm_compute_bare_metal" "bm" {
   }
 
 data "vsphere_datacenter" "dc" {
-  name = "${data.ibm_compute_bare_metal.bm.datacenter}"
+  name = "dc1"
   
   }
