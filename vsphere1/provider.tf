@@ -1,9 +1,9 @@
-provider ibm {
-  ibmcloud_api_key      = "${var.ibmcloud_apikey}"
-  region                = "${var.ibm_region}"
-  generation            = 1
-  ibmcloud_timeout      = 60
-}
+# provider ibm {
+#  ibmcloud_api_key      = "${var.ibmcloud_apikey}"
+#  region                = "${var.ibm_region}"
+#  generation            = 1
+#  ibmcloud_timeout      = 60
+# }
 
 ##############################################################################
 
@@ -12,6 +12,6 @@ provider ibm {
 #Resource Group
 ##############################################################################
 
-data ibm_resource_group resource_group {
-  name = "${var.resource_group}"
-  }
+# data ibm_resource_group resource_group {
+#  name = "${var.resource_group}"
+#  }
