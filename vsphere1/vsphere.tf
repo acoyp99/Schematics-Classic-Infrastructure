@@ -14,7 +14,7 @@ data "ibm_compute_bare_metal" "bm" {
   domain      = "${var.bm_domain}"
   }
 
-data "vsphere_datacenter" "dc" {
-  name = "dc1"
-  
-  }
+# data "vsphere_datacenter" "dc" {
+#  name = "dc1"
+#  
+#  }
